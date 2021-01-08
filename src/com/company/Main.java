@@ -5,13 +5,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese su edad: ");
-        int age = scanner.nextInt();
-        if(age  >= 21){
-            System.out.println("Ud.  es mayor de edad");
-        } else {
-            System.out.println("ud. es menor de edad");
-        }
+        System.out.println("Ingrese un valor: ");
+        int num = scanner.nextInt();
+        int resto = num % 2;
+        String msg = resto == 0 ? "El valor ingresado es par" : "El valor ingresado es impar";
+        System.out.println(num + " " + msg);
 
 
     }
