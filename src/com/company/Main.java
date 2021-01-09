@@ -4,30 +4,41 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // Defino las contantes
+        // Las constantes van con publi static y final pero en este caso solo usare el final
+         final int LUNES = 1;
+         final int MARTES = 2;
+         final int MIERCOLES = 3;
+         final int JUEVES = 4;
+         final int VIERNES = 5;
+         final int SABADO = 6;
+         final int DOMINGO = 7;
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese  un dia de la semana (numero): ");
         int num = scanner.nextInt();
         String day;
         switch(num){
-            case 1:
+            case LUNES:
                 day = "Lunes";
                 break;
-            case 2:
+            case MARTES:
                 day = "Martes";
                 break;
-            case 3:
+            case MIERCOLES:
                 day = "Miercoles";
                 break;
-            case 4:
+            case JUEVES:
                 day = "Jueves";
                 break;
-            case 5:
+            case VIERNES:
                 day = "Viernes";
                 break;
-            case 6:
+            case SABADO:
                 day = "Sabado";
                 break;
-            case 7:
+            case DOMINGO:
                 day = "Domingo";
                 break;
             default:
